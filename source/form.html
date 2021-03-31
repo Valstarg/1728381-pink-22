@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="page" lang="ru">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+
+    <!-- Фавиконки -->
+
+    <link rel="icon" href="#">
+    <link rel="icon" href="#">
+    <link rel="apple-touch-icon" href="#">
+    <link rel="manifest" href="#">
+
+    <!-- Шрифты и стили -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="#">
+
+  </head>
+
+  <body class="page__body">
+
+    <header class="page-header">
+
+      <div class="page-header__wrapper">
+
+        <nav class="main-navigation">
+
+          <div class="main-navigation__menu">
+
+            <a class="page-header__logo">
+              <img class="page-header__logo-image" src="../source/img/pink-logo-mobile.svg" width="74" height="23" alt="Приложение PINK">
+            </a>
+
+            <button class="main-navigation__toggle" type="button">Меню</button>
+
+          </div>
+
+          <ul class="main-navigation__navigation-list">
+
+            <li class="main-navigation__item">
+              <a class="main-navigation__link">Главная</a>
+            </li>
+
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="catalog.html">Фотографии</a>
+            </li>
+
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="form.html">Конкурс</a>
+            </li>
+
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </div>
+
+      <div class="page-header__contest">
+
+        <h1 class="visually-hidden">Конкурс</h1>
+
+        <p class="page-header__contest__title">Конкурс на самое безбашенное путешествие с Пинк</p>
+
+      </div>
+
+    </header>
+
+    <main class="page-inner">
+
+      <h2 class="visually-hidden">Данные конкурсанта</h2>
+
+        <p class="page-inner__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="mobile-hidden">Пожалуйста, заполните форму ниже:</span>
+        </p>
+
+      <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+
+        <div class="feedback-form__data">
+
+          <fieldset class="feedback-form__data__fieldset">
+
+            <ul class="feedback-form__data__list">
+
+              <li class="feedback-form__data__item">
+                <label class="feedback-form__data__item__label">Фамилия:
+                  <input class="feedback-form__data__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
+                </label>
+              </li>
+
+              <li class="feedback-form__data__item">
+                <label class="feedback-form__data__item__label">Имя:
+                  <input class="feedback-form__data__input" type="text" name="name" placeholder="Введите ваше имя *" required>
+                </label>
+              </li>
+
+              <li class="feedback-form__data__item">
+                <label class="feedback-form__data__item__label">Отчество:
+                  <input class="feedback-form__data__input" type="text" name="middlename" placeholder="Ну и отчество тоже">
+                </label>
+              </li>
+
+            </ul>
+
+          </fieldset>
+
+        </div>
+
+        <div class="feedback-form__achievements">
+
+          <fieldset class="feedback-form__achievements__fieldset">
+
+            <legend class="feedback-form__legend">Ваши безбашенные достижения в путешествии</legend>
+
+            <ul class="feedback-form__achievements__list">
+
+              <li class="feedback-form__achievements__item">
+                <label class="feedback-form__achievements__item__label">
+                  <input class="feedback-form__achievements__input" type="checkbox" name="achievement" checked>
+                  Сделал селфи с акулой
+                </label>
+              </li>
+
+              <li class="feedback-form__achievements__item">
+                <label class="feedback-form__achievements__item__label">
+                  <input class="feedback-form__achievements__input" type="checkbox" name="achievement" checked>
+                  Обгорел на пляже
+                </label>
+              </li>
+
+              <li class="feedback-form__achievements__item">
+                <label class="feedback-form__achievements__item__label">
+                  <input class="feedback-form__achievements__input" type="checkbox"name="achievement">
+                  Видел Чака Норриса
+                </label>
+              </li>
+
+              <li class="feedback-form__achievements__item">
+                <label class="feedback-form__achievements__item__label">
+                  <input class="feedback-form__achievements__input" type="checkbox" name="achievement">
+                  Накупил сувениров
+                </label>
+              </li>
+
+              <li class="feedback-form__achievements__item">
+                <label class="feedback-form__achievements__item__label">
+                  <input class="feedback-form__achievements__input" type="checkbox" name="achievement" checked>
+                  Удержал башню
+                </label>
+              </li>
+
+              <li class="feedback-form__achievements__item">
+                <label class="feedback-form__achievements__item__label">
+                  <input class="feedback-form__achievements__input" type="checkbox" name="achievement">
+                  Разгромил отель
+                </label>
+              </li>
+
+            </ul>
+
+          </fieldset>
+
+        </div>
+
+        <div class="feedback-form__contacts">
+
+          <fieldset class="feedback-form__contacts__fieldset">
+
+            <legend class="feedback-form__contacts__legend">Контактная информация</legend>
+
+            <ul class="feedback-form__contacts__list">
+
+              <li class="feedback-form__contacts__item">
+                <label class="feedback-form__contacts__item__label">Номер телефона
+                  <input class="feedback-form__contacts__input" type="tel" name="phone" placeholder="Номер, пожалуйста">
+                </label>
+              </li>
+
+              <li class="form-feedback__contacts__item">
+                <label class="feedback-form__contacts__item__label">Адрес почты
+                  <input class="feedback-form__contacts__input" type="email" name="email" placeholder="Введите почту *" required>
+                </label>
+              </li>
+
+            </ul>
+
+          </fieldset>
+
+        </div>
+
+        <div class="feedback-form__os">
+
+          <fieldset class="feedback-form__os__fieldset">
+
+            <legend class="feedback-form__os__legend">С каким приложением путешествовали?</legend>
+
+            <ul class="feedback-form__os__list">
+
+              <li class="feedback-form__os__item">
+                <label class="form-feedback__os__item__label">
+                  <input class="feedback-form__os__radio" type="radio" name="operationsystem" checked>
+                  Pink для iOS
+                </label>
+              </li>
+
+              <li class="feedback-form__os__item">
+                <label class="feedback-form__os__item__label">
+                  <input class="feedback-form__os__radio" type="radio" name="operationsystem">
+                  Pink на Android
+                </label>
+              </li>
+
+              <li class="feedback-form__os__item">
+                <label class="feedback-form__os__item__label">
+                  <input class="feedback-form__os__radio" type="radio" name="operationsystem">
+                  Windows Phone
+                </label>
+              </li>
+
+            </ul>
+
+          </fieldset>
+
+        </div>
+
+        <div class="feedback-form__feelings">
+
+          <fieldset class="feedback-form__feelings__fieldset">
+
+            <legend class="feedback-form__feelings__legend">Опишите свои эмоции</legend>
+
+            <textarea class="feedback-form__feelings__textarea" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+
+          </fieldset>
+
+        </div>
+
+        <div class="feedback-form__send">
+
+          <button class="feedback-form__send__send-button" type="submit">Отправить форму</button>
+
+          <p class="feedback-form__send__notice">* — обязательные
+            <span class="mobile-hidden">для заполнения</span>
+            поля
+          </p>
+
+        </div>
+
+      </form>
+
+    </main>
+
+    <footer class="main-footer">
+
+      <div class="main-footer__wrapper">
+
+        <div class="main-footer__logo">
+
+          <a class="main-footer__logo__link">
+            <img src="../source/img/glasses-purple.svg" width="59" height="40" alt="Логотип">
+            <img src="../source/img/logo-dark.svg" width="74" height="23" alt="Логотип. PINK">
+          </a>
+
+        </div>
+
+        <div class="main-footer__social">
+
+          <ul class="main-footer__social__list">
+
+            <li class="main-footer__social__item">
+              <a class="main-footer__social__link" href="https://twitter.com">
+                Twitter
+              </a>
+            </li>
+
+            <li class="main-footer__social__item">
+              <a class="main-footer__social__link" href="https://www.facebook.com">
+                Facebook
+              </a>
+            </li>
+
+            <li class="main-footer__social__item">
+              <a class="main-footer__social__link" href="https://www.youtube.com">
+                YouTube
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="page-footer__copyright">
+
+          <span class="page-footer__copyright-text">Разработано</span>
+
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
+            HTMLAcademy
+          </a>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+  </body>
+
+</html>
