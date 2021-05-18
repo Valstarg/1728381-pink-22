@@ -1,0 +1,29 @@
+.map__container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+  background-color: @white;
+
+  .triangle-down {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-top: 33px solid @white;
+  }
+
+  &-::before {
+    content: "";
+    position: absolute;
+    top: 95px;
+    left: 142px;
+    width: 36px;
+    height: 36px;
+    background-image: url(../img/symbols/map-marker.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+

@@ -1,0 +1,71 @@
+.slider__reviews__wrapper {
+  position: relative;
+  width: 320px;
+  height: max-content;
+  margin: 0 auto;
+  padding: 0;
+  background-color: @white;
+}
+
+.slider__reviews__slide {
+  padding-top: 25px;
+  padding-bottom: 100px;
+
+  .slider__reviews__author {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .author__age-employment {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.slider__reviews__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: @main-color;
+  text-align: center;
+}
+
+.slider__button {
+  margin-right: 9px;
+  margin-left: 9px;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: rgba(40, 54, 69, 0.3);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
+}
+
+.slider__button--current {
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 3px solid #283645;
+  border-radius: 50%;
+  cursor: pointer;
+}
