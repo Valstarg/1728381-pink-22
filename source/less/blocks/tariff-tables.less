@@ -1,0 +1,110 @@
+.slider__tariff__wrapper {
+  width: 320px;
+  height: max-content;
+  margin: 0 auto;
+  padding: 0;
+  background-color: @white;
+
+  .cross-section {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 320px solid transparent;
+    border-top: 20px solid @white;
+  }
+
+  .slider__tariff {
+    background-color: @background;
+    padding-top: 129px;
+    padding-bottom: 100px;
+  }
+}
+
+.slider__tariff__slide {
+  margin: auto;
+}
+
+.table__head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 276px;
+  height: 94px;
+  background-color: @main-color;
+  color: @white;
+
+  .tariff {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .price {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+
+  .hit {
+    width: 120px;
+    height: 25px;
+    position: absolute;
+    right: 192px;
+    top: 12px;
+    transform: rotate(-45deg);
+    padding-bottom: 2px;
+    background-color: @pink;
+    color: @white;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.table__cell {
+  position: relative;
+  width: 276px;
+  height: 59px;
+  background-color: @white;
+  border-collapse: collapse;
+  border-bottom: 2px solid @table-border;
+  border-right: 2px solid @table-border;
+  border-left: 2px solid @table-border;
+
+  .option {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: @main-color;
+    margin-left: 20px;
+  }
+
+  .option__yes::after {
+    content: "";
+    position: absolute;
+    right: 19px;
+    width: 31px;
+    height: 21px;
+    background-image: url(../img/symbols/yes.svg);
+  }
+
+  .option__no::after {
+    content: "";
+    position: absolute;
+    right: 22px;
+    width: 27px;
+    height: 27px;
+    background-image: url(../img/symbols/no.svg);
+  }
+}

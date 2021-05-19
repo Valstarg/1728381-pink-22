@@ -1,0 +1,36 @@
+.slider__buttons__block {
+  position: relative;
+}
+
+.slider__buttons__tariff {
+  position: absolute;
+  top: 35px;
+  left: 115px;
+
+  .slider__button {
+    margin-right: 9px;
+    margin-left: 9px;
+    padding: 0;
+    width: 6px;
+    height: 6px;
+    background-color: @special-bg;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: @button-bg;
+    }
+
+    &:active {
+      background-color: @button-border;
+    }
+  }
+
+  .slider__button--current {
+    width: 12px;
+    height: 12px;
+    background-color: @white;
+    border: 3px solid @main-color;
+  }
+}

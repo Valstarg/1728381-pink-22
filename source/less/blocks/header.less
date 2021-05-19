@@ -1,0 +1,78 @@
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 320px;
+  height: 462px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: @white;
+  background-image: url(../img/back-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .downloads__title {
+    width: 280px;
+    padding: 0;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 300;
+    color: @white;
+    text-align: center;
+  }
+
+  .users-hand__image {
+    width: 320px;
+    height: 286px;
+    background-image: url(../img/hand-phone-pc.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  }
+}
+
+.main-navigation__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  height: 66px;
+  background-color: @light-black;
+
+  .page-header__logo {
+    width: 74px;
+    height: 23px;
+    margin-left: 20px;
+    background-image: url(../img/symbols/pink-logo-mobile.svg);
+
+    &:hover {
+      background-image: url(../img/symbols/pink-mobile-hover.svg);
+    }
+
+    &:active {
+      background-image: url(../img/symbols/pink-mobile-active.svg);
+    }
+  }
+
+  .main-navigation__toggle {
+    width: 50px;
+    height: 24px;
+    margin-right: 20px;
+    background-image: url(../img/symbols/open-menu-btn.svg);
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    &:hover {
+      background-image: url(../img/symbols/open-menu-btn-hover.svg);
+    }
+
+    &:active {
+      background-image: url(../img/symbols/open-menu-btn-active.svg);
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.main-footer__social {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+  .main-footer__social__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 172px;
+
+    .main-footer__social__item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+  }
+
+  .main-footer__social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: @white;
+    border: 3px solid @button-border;
+    border-radius: 48px;
+
+      &:hover {
+        border: 3px solid @main-color;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+  }

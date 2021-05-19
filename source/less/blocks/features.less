@@ -1,0 +1,57 @@
+.page-main__features {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: @background;
+
+  .cross-section {
+    position: absolute;
+      width: 0;
+      height: 0;
+      border-right: 320px solid transparent;
+      border-top: 20px solid @white;
+  }
+}
+
+.page-main__features__wrapper {
+  padding-top: 50px;
+
+  .page-main__features__usage-example {
+    width: 157px;
+    height: 320px;
+    background-color: @background;
+    background-image: url(../img/iphone.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 11%;
+    margin: 0 auto;
+  }
+}
+
+.features__list {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+}
+
+.features__item {
+  list-style: none;
+  text-align: center;
+
+  .features__item__title {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .features__item__text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: @main-color;
+  }
+}
