@@ -1,0 +1,64 @@
+.feedback-form__contacts {
+  margin-bottom: 44px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.feedback-form__contacts__fieldset {
+  border: none;
+  padding: 0;
+
+  .feedback-form__contacts__legend {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: @pink;
+    text-align: center;
+  }
+}
+
+.feedback-form__contacts__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feedback-form__contacts__input__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @pink;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.feedback-form__contacts__input {
+  width: 256px;
+  height: 59px;
+  border: 2px solid @table-border;
+  border-radius: 1px;
+  padding: 0;
+  padding-left: 20px;
+
+  &:hover {
+    border: 2px solid @main-color;
+  }
+
+  &:active {
+    border: 2px solid @light-pink;
+    outline: none;
+  }
+
+  ::placeholder {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: @main-color;
+  }
+}

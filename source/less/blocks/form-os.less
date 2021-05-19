@@ -1,0 +1,86 @@
+.feedback-form__os {
+  background-color: @background;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.feedback-form__os__fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  .feedback-form__os__legend {
+    width: 190px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: @pink;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .feedback-form__os__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.feedback-form__os__item {
+  margin-bottom: 40px;
+
+  .form-feedback__os__item__label {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: @main-color;
+  }
+
+  .feedback-form__os__radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    &+label {
+      display: flex;
+      align-items: center;
+    }
+
+    &+label::before {
+      content: "";
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      background-image: url(../img/symbols/radio.svg);
+      margin-right: 30px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    &+label:hover::before {
+      background-image: url(../img/symbols/radio-hover.svg);
+    }
+
+    &+label:active::before {
+      background-image: url(../img/symbols/radio-active.svg);
+    }
+
+    &:checked+label::before {
+      background-image: url(../img/symbols/ellipse-small.svg), url(../img/symbols/radio.svg);
+      background-position: center;
+    }
+
+    &:checked+label:hover::before {
+      background-image: url(../img/symbols/ellipse-small.svg), url(../img/symbols/radio-hover.svg);
+    }
+
+    &:checked+label:active::before {
+      background-image: url(../img/symbols/ellipse-small.svg), url(../img/symbols/radio-active.svg);
+    }
+  }
+}
