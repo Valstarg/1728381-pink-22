@@ -1,0 +1,55 @@
+.adding-photo__buttons {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+
+  .adding-photo__button {
+    width: 280px;
+    height: 55px;
+    margin-bottom: 12px;
+    background-color: transparent;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: @pink;
+    border: 3px solid @pink;
+    border-radius: 30px;
+    outline: none;
+
+    &:hover {
+      background-color: @pink;
+      color: @white;
+    }
+
+    &:active {
+      background-color: @pink;
+      color: @grey;
+      outline: none;
+      border: none;
+    }
+  }
+
+  .adding-photo__button--disabled {
+    color: @button-border;
+    border: 3px solid @button-border;
+    border-radius: 30px;
+
+    &:hover {
+      background-color: transparent;
+      color: @border-light-bg;
+      border: 3px solid @border-light-bg;
+      border-radius: 30px;
+    }
+
+    &:active {
+      background-color: @border-light-bg;
+      color: @grey;
+      border: 3px solid @border-light-bg;
+      border-radius: 30px;
+      outline: none;
+      border: none;
+    }
+  }
+}

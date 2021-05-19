@@ -1,0 +1,132 @@
+.main-gallery {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: @white;
+
+  .main-gallery__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.main-gallery__block {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-top: 45px;
+
+  .main-gallery__description {
+    width: 250px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: @main-color;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.main-gallery__photos {
+  width: 280px;
+  height: 320px;
+  margin: 10px;
+
+  .main-gallery__photos__link {
+    display: block;
+    width: 280px;
+    height: 180px;
+    background-color: @background;
+    background-image: url(../img/levon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .anton {
+    background-image: url(../img/anton.jpg);
+  }
+
+  .boris {
+    background-image: url(../img/boris.jpg);
+  }
+
+  .sergey {
+    background-image: url(../img/sergey.jpg);
+  }
+
+  .maxim {
+    background-image: url(../img/maxim.jpg);
+  }
+
+  .nadejda {
+    background-image: url(../img/nadejda.jpg);
+  }
+}
+
+.main-gallery__photos__info {
+  width: 250px;
+  height: 120px;
+  background-color: @background;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.main-gallery__photos__author {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: @main-color;
+}
+
+.main-allery__photos__date {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: @main-color;
+}
+
+.main-gallery__photos__comment {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: @main-color;
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.main-gallery__photos__likes {
+  position: relative;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: @pink;
+  padding-left: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 13px;
+    height: 12px;
+    background-image: url(../img/symbols/heart.svg);
+    background-repeat: no-repeat;
+  }
+}

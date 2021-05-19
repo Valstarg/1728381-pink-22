@@ -1,0 +1,38 @@
+.adding-photo {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: @background;
+}
+
+.adding-photo__description {
+  display: flex;
+  align-items: center;
+  height: 160px;
+  background-color: @white;
+
+  .adding-photo__title {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: @main-color;
+    text-align: center;
+  }
+}
+
+.adding-photo__image {
+  display: block;
+  width: 280px;
+  height: 374px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-image: url(../img/adding-menu.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .adding-photo__image__input {
+    display: none;
+  }
+}

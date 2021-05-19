@@ -1,0 +1,44 @@
+.adding-photo__management__range-filter {
+  width: 320px;
+  height: 40px;
+  margin-bottom: 38px;
+  border-bottom: 1px solid @button-border;
+}
+
+.adding-photo__management__input-block {
+  position: relative;
+  margin-bottom: 9px;
+
+  .adding-photo__management__scale {
+    width: 240px;
+    height: 2px;
+    margin-left: 40px;
+    background-color: @main-color;
+  }
+
+  .adding-photo__management__toggle {
+    position: absolute;
+    top: -7px;
+    left: 205px;
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    border: 2px solid @pink;
+    background-color: @white;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:active {
+      background-color: @pink;
+      outline: none;
+    }
+  }
+
+  .adding-photo__management__toggle__fill {
+    left: 50px
+  }
+
+  .adding-photo__management__toggle__contrast {
+    left: 130px;
+  }
+}
