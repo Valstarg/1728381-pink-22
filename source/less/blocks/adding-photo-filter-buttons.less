@@ -1,0 +1,59 @@
+.adding-photo__filters-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  .adding-photo__filter-button {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+  }
+
+  .adding-photo__filter-button__crop {
+    background-image: url(../img/symbols/crop-button-disable.svg);
+
+    &:hover {
+      background-image: url(../img/symbols/crop-button-hover.svg);
+    }
+
+    &:focus {
+      background-image: url(../img/symbols/crop-button-active.svg);
+      outline: none;
+      border: none;
+    }
+  }
+
+  .adding-photo__filter-button__fill {
+    background-image: url(../img/symbols/fill-button-disable.svg);
+
+    &:hover {
+      background-image: url(../img/symbols/fill-button-hover.svg);
+    }
+
+    &:focus {
+      background-image: url(../img/symbols/fill-button-active.svg);
+      outline: none;
+      border: none;
+    }
+  }
+
+  .adding-photo__filter-button__contrast {
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/symbols/contrast-button-disable.svg);
+
+    &:hover {
+      background-image: url(../img/symbols/contrast-button-hover.svg);
+    }
+
+    &:focus {
+      background-image: url(../img/symbols/contrast-button-active.svg);
+      outline: none;
+      border: none;
+    }
+  }
+}
